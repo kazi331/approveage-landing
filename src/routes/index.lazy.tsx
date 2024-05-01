@@ -1,4 +1,6 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
+import Container from '../components/shared/Container'
+
 
 export const Route = createLazyFileRoute('/')({
   component: Home,
@@ -6,5 +8,9 @@ export const Route = createLazyFileRoute('/')({
 
 
 function Home() {
-  return (<div>Home</div>)
+  return (<Container>
+    <div className='py-3'>
+      <h1>Home </h1>
+    </div>
+  </Container>)
 }
