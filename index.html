@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/root.css" />
     <title>Approveage</title>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      h2,
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+    </style>
   </head>
   <body>
     <header class="container px-4 mx-auto max-w-7xl py-2">
@@ -15,17 +30,17 @@
       >
     </header>
     <!-- header section -->
-    <section class="container mx-auto max-w-6xl my-14 px-4 ">
+    <section class="container mx-auto max-w-6xl my-14 px-4">
       <div
         class="grid grid-cols-12 space-x-10 items-center justify-center justify-items-center"
       >
-        <div class="col-span-full md:col-span-6 ">
-          <div class="mb-2 ">
-            <h1 class="text-4xl font-semibold">
+        <div class="col-span-full md:col-span-6">
+          <div class="mb-2">
+            <h1 class="text-3xl md:text-4xl font-semibold">
               <span class="text-primary">Simplify</span> your mortgage <br />
               process with us
             </h1>
-            <p class="my-8 font-light text-slate-600 ">
+            <p class="my-8 font-light text-slate-600">
               Lorem ipsum dolor sit amet consectetur. Eget in leo quis non
               senectus leo velit augue gravida. Dictum convallis ultrices
               vulputate orci lobortis semper.
@@ -78,9 +93,7 @@
             width="40"
             height="40"
           />
-          <h2 class="text-lg font-medium my-3 ">
-            Joint Mortgage Applications
-          </h2>
+          <h2 class="text-lg font-medium my-3">Joint Mortgage Applications</h2>
           <p>
             Our platform simplifies the mortgage process by allowing multiple
             applicants on one application, fostering collaboration and
@@ -97,9 +110,7 @@
             width="40"
             height="40"
           />
-          <h2 class="text-lg font-medium my-3 ">
-            Mortgage Affordability Tool
-          </h2>
+          <h2 class="text-lg font-medium my-3">Mortgage Affordability Tool</h2>
           <p>
             Our smart algorithm provides a clear, personalized affordability
             estimate, ensuring it accurately reflects your financial situation.
@@ -115,9 +126,7 @@
             width="40"
             height="40"
           />
-          <h2 class="text-lg font-medium my-3 ">
-            Instant Broker Messaging
-          </h2>
+          <h2 class="text-lg font-medium my-3">Instant Broker Messaging</h2>
           <p>
             Say goodbye to traditional email and hello to real-time
             conversations for quicker, more efficient communication.
@@ -127,7 +136,16 @@
     </section>
     <!-- footer -->
     <footer class="container mx-auto max-w-6xl my-14 px-4 text-slate-500">
-      © 2024 Approveage Inc. All Rights Reserved - <a href="/privacy.html">Our Privacy Policy</a> - <a href="mailto:admin@approveage.com" target="_blank">Contact Us at our email here</a>
+      © 2024 Approveage Inc. All Rights Reserved - <a
+        class="hover:underline hover:underline-offset-4 text-primary/60"
+        href="/privacy.html"
+        >Our Privacy Policy</a
+      > - <a
+        class="hover:underline hover:underline-offset-4 text-primary/60"
+        href="mailto:admin@approveage.com"
+        target="_blank"
+        >Contact Us at our email here</a
+      >
     </footer>
     <script src="index.js"></script>
   </body>
