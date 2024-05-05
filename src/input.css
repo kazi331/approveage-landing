@@ -31,3 +31,7 @@ ul.common-list li{
 ol li{
     @apply mb-2
 }
+
+.spinner{
+    @apply animate-pulse
+}

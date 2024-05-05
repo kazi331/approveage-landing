@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-      <link rel="shortcut icon" href="./icons/brand/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./icons/brand/favicon.ico"
+      type="image/x-icon"
+    />
 
     <title>Approveage</title>
     <!-- font -->
@@ -39,26 +43,30 @@
               vulputate orci lobortis semper.
             </p>
           </div>
-          <form id="subs-form">
-            <label for="email">
-              <span>Email</span>
-            </label>
-            <div class="grid grid-cols-12 items-center gap-4 mt-2 my-8">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="border rounded-lg p-2 col-span-full sm:col-span-8 focus-visible:outline-gray-300"
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                class="border py-2 w-full rounded-lg col-span-full sm:col-span-4 bg-accent active:scale-95 transition-all text-white hover:bg-accent/90"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
+          <fieldset  id="subs-form-field">
+            <form id="subs-form">
+              <label for="email">
+                <span>Email</span>
+              </label>
+              <p id="message" class="text-green-500 my-0"></p>
+              <div class="grid grid-cols-12 items-center gap-4 mt-2 my-8">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="border rounded-lg p-2 col-span-full sm:col-span-8 focus-visible:outline-gray-300"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="border py-2 w-full rounded-lg col-span-full sm:col-span-4 bg-accent active:scale-95 transition-all text-white hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </fieldset>
           <p class="my-6 text-slate-600">
             Coming to the App store and Google Play Store. Subscribe for
             updates, we promise you we won’t spam you.
