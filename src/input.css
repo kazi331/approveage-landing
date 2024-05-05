@@ -4,14 +4,14 @@
 
 
 h4{
-    @apply text-lg font-semibold
+    @apply text-lg font-semibold mt-6 mb-2
 }
 
 p{
     @apply mt-2 mb-4
 }
 ol{
-    @apply list-decimal list-inside
+    @apply list-decimal list-inside pl-4;
 }
 ol li{
     @apply mb-0.5
@@ -27,4 +27,7 @@ ul.common-list{
 }
 ul.common-list li{
     @apply mb-1
+}
+ol li{
+    @apply mb-2
 }

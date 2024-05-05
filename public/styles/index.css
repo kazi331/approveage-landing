@@ -695,12 +695,12 @@ video {
   list-style-position: inside;
 }
 
-.list-none {
-  list-style-type: none;
-}
-
 .list-disc {
   list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-12 {
@@ -839,6 +839,10 @@ video {
   font-weight: 600;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(95 125 34 / var(--tw-text-opacity));
@@ -870,6 +874,8 @@ video {
 }
 
 h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -883,6 +889,7 @@ p {
 ol {
   list-style-position: inside;
   list-style-type: decimal;
+  padding-left: 1rem;
 }
 
 ol li {
@@ -910,6 +917,10 @@ ul.common-list {
 
 ul.common-list li {
   margin-bottom: 0.25rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
 }
 
 .hover\:bg-accent\/90:hover {
