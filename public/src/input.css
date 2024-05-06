@@ -17,7 +17,7 @@ h4 {
 }
 
 p {
-  @apply mt-2 mb-4;
+  @apply my-2;
 }
 ol {
   @apply list-decimal list-inside pl-4;
@@ -26,13 +26,13 @@ ol li {
   @apply mb-0.5;
 }
 aside li a {
-  @apply px-2 py-1.5 block;
+  @apply px-2 py-1.5 block text-gray-700;
 }
 aside li a:hover {
   @apply bg-gray-100;
 }
 ul.common-list {
-  @apply list-disc list-inside pl-4;
+  @apply list-disc list-inside pl-4 mb-4;
 }
 ul.common-list li {
   @apply mb-1;
@@ -46,4 +46,10 @@ ol li {
 }
 .poppins {
   font-family: "Poppins", sans-serif;
+}
+th, td{
+  @apply border border-slate-600 p-2
+}
+a{
+  @apply text-primary/80 hover:text-primary
 }
