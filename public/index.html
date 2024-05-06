@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/base.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link
       rel="shortcut icon"
@@ -15,6 +14,13 @@
     <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -33,14 +39,16 @@
       >
         <div class="col-span-full md:col-span-6">
           <div class="mb-2">
-            <h1 class="text-3xl md:text-4xl font-semibold">
+            <h1
+              class="text-3xl md:text-4xl font-semibold poppins leading-10 md:leading-[48px] capitalize"
+            >
               <span class="text-primary">Simplify</span> your mortgage <br />
               process with us
             </h1>
             <p class="my-4 text-slate-600">
-              Lorem ipsum dolor sit amet consectetur. Eget in leo quis non
-              senectus leo velit augue gravida. Dictum convallis ultrices
-              vulputate orci lobortis semper.
+              We want to make the mortgage approval process easy for you and
+              other potential Canadian homeowners. Subscribe now to begin your
+              journey!
             </p>
           </div>
           <fieldset>
@@ -49,7 +57,7 @@
                 <span>Email</span>
               </label>
               <p id="message" class="text-green-500 my-0"></p>
-              <div class="grid grid-cols-12 items-center gap-4 mt-2 my-8">
+              <div class="grid grid-cols-12 items-center gap-4 mt-2 mb-2">
                 <input
                   type="email"
                   name="email"
@@ -67,7 +75,7 @@
               </div>
             </form>
           </fieldset>
-          <p class="my-6 text-slate-600">
+          <p class="my-2 text-slate-600">
             Coming to the App store and Google Play Store. Subscribe for
             updates, we promise you we won’t spam you.
           </p>
@@ -94,7 +102,7 @@
             width="40"
             height="40"
           />
-          <h2 class="text-lg font-medium my-3">Joint Mortgage Applications</h2>
+          <h2 class="text-lg my-3">Joint Mortgage Applications</h2>
           <p>
             Our platform simplifies the mortgage process by allowing multiple
             applicants on one application, fostering collaboration and
@@ -111,7 +119,7 @@
             width="40"
             height="40"
           />
-          <h2 class="text-lg font-medium my-3">Mortgage Affordability Tool</h2>
+          <h2 class="text-lg my-3">Mortgage Affordability Tool</h2>
           <p>
             Our smart algorithm provides a clear, personalized affordability
             estimate, ensuring it accurately reflects your financial situation.
@@ -127,7 +135,7 @@
             width="40"
             height="40"
           />
-          <h2 class="text-lg font-medium my-3">Instant Broker Messaging</h2>
+          <h2 class="text-lg my-3">Instant Broker Messaging</h2>
           <p>
             Say goodbye to traditional email and hello to real-time
             conversations for quicker, more efficient communication.
@@ -136,18 +144,34 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="container mx-auto max-w-6xl my-14 px-4 text-slate-500">
-      © 2024 Approveage Inc. All Rights Reserved - <a
-        class="hover:underline hover:underline-offset-4 text-primary/60"
-        href="./privacy"
-        >Our Privacy Policy</a
-      > - <a
-        class="hover:underline hover:underline-offset-4 text-primary/60"
-        href="mailto:info@approveage.com"
-        target="_blank"
-        >Contact Us</a
-      >
+    <footer class="text-slate-500 py-4">
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-sm">
+            © <span id="year"></span> Approveage. All rights reserved.
+          </p>
+          <nav>
+            <ul class="flex list-none gap-4">
+              <li>
+                <a href="/terms" class="text-sm">Terms of Service</a>
+              </li>
+              <li>
+                <a href="/privacy" class="text-sm">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="mailto:info@approveage.com" class="text-sm"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
+    <script>
+      const year = new Date().getFullYear();
+      document.querySelector("#year").innerText = year;
+    </script>
     <script src="./src/scripts/index.js"></script>
   </body>
 </html>
