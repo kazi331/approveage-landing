@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/styles/base.css" />
     <link rel="stylesheet" href="../src/styles/index.css" />
     <link
       rel="shortcut icon"
@@ -48,9 +47,7 @@
         </aside>
         <!-- main content Header -->
         <div class="w-full ps-4">
-          <h1
-            class="text-3xl font-medium mb-2 text-center sm:text-left capitalize"
-          >
+          <h1 class="text-3xl mb-2 text-center sm:text-left capitalize">
             COOKIE POLICY
           </h1>
           <p class="text-sm mb-8 text-center sm:text-left">
@@ -58,16 +55,18 @@
           </p>
 
           <!-- Main content start -->
-         <main></main>
+          <main></main>
 
           <!-- Main content end -->
         </div>
       </div>
     </section>
-    <footer class="bg-slate-900 text-white py-4">
+    <footer class="text-slate-500 py-4">
       <div class="container mx-auto max-w-6xl px-4">
         <div class="flex justify-between items-center">
-          <p class="text-sm">© 2023 Approveage. All rights reserved.</p>
+          <p class="text-sm">
+            © <span id="year"></span> Approveage. All rights reserved.
+          </p>
           <nav>
             <ul class="flex list-none gap-4">
               <li>
@@ -86,5 +85,9 @@
         </div>
       </div>
     </footer>
+    <script>
+      const year = new Date().getFullYear();
+      document.querySelector("#year").innerText = year;
+    </script>
   </body>
 </html>

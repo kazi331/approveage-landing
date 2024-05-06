@@ -2,36 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
-h4{
-    @apply text-lg font-semibold mt-6 mb-2
+h1,
+h2,
+h3,
+h4 {
+  @apply font-semibold;
+}
+* {
+  font-family: "Inter", sans-serif;
 }
 
-p{
-    @apply mt-2 mb-4
-}
-ol{
-    @apply list-decimal list-inside pl-4;
-}
-ol li{
-    @apply mb-0.5
-}
-aside li a{
-    @apply px-2 py-1.5 block
-}
-aside li a:hover{
-    @apply bg-gray-100
-}
-ul.common-list{
-    @apply list-disc list-inside pl-4
-}
-ul.common-list li{
-    @apply mb-1
-}
-ol li{
-    @apply mb-2
+h4 {
+  @apply text-lg mt-6 mb-2;
 }
 
-.spinner{
-    @apply animate-pulse
+p {
+  @apply mt-2 mb-4;
+}
+ol {
+  @apply list-decimal list-inside pl-4;
+}
+ol li {
+  @apply mb-0.5;
+}
+aside li a {
+  @apply px-2 py-1.5 block;
+}
+aside li a:hover {
+  @apply bg-gray-100;
+}
+ul.common-list {
+  @apply list-disc list-inside pl-4;
+}
+ul.common-list li {
+  @apply mb-1;
+}
+ol li {
+  @apply mb-2;
+}
+
+.spinner {
+  @apply animate-pulse;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
