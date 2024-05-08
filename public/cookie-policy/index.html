@@ -11,10 +11,15 @@
 
 <body>
   <!-- Header start -->
-  <header class="container px-4 mx-auto max-w-6xl py-2 mb-4">
-    <a href="/" class="flex items-center gap-2"><img src="../src/icons/logo.svg" alt="logo" width="40" height="40" />
-      <span class="logo-title">Approveage</span></a>
-  </header>
+  <header
+      class="container px-4 mx-auto max-w-6xl py-2 mb-4 flex items-center justify-between"
+    >
+      <a href="/" class="flex items-center gap-2"
+        ><img src="../src/icons/logo.svg" alt="logo" width="40" height="40" />
+        <span class="logo-title">Approveage</span></a
+      >
+      <button id="menu-btn" class="block sm:hidden">Menu</button>
+    </header>
   <!-- header end -->
   <section class="container mx-auto max-w-6xl mb-10 px-4 text-slate-600">
     <div class="flex">
@@ -278,6 +283,7 @@
       </div>
     </div>
   </section>
+  <!-- footer -->
   <footer class="text-slate-500 py-4">
     <div class="container mx-auto max-w-6xl px-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
@@ -300,10 +306,51 @@
       </div>
     </div>
   </footer>
+   <!-- Menu -->
+    <div
+      id="menu"
+      class="fixed inset-0 bg-white backdrop-blur sm:hidden h-0 overflow-hidden"
+    >
+      <div class="flex gap-2 items-center justify-between p-4">
+        <a href="/" class="flex items-center gap-2"
+          ><img src="../src/icons/logo.svg" alt="logo" width="40" height="40" />
+          <span class="logo-title">Approveage</span></a
+        >
+        <button class="close-menu rounded-full bg-gray-200 p-2">
+          <img src="/public/src/icons/x.svg" alt="Close" class="size-3" />
+        </button>
+      </div>
+      <div class="flex items-start justify-center">
+        <div
+          class="w-full flex flex-col text-center my-10 rounded-lg overflow-hidden"
+        >
+          <a href="../terms" class="text-sm active:bg-white py-4 text-accent"
+            >Terms & Conditions</a
+          >
+          <a href="../privacy" class="text-sm active:bg-white py-4 text-accent"
+            >Privacy Policy</a
+          >
+          <a
+            href="../disclaimer"
+            class="text-sm active:bg-white py-4 text-accent"
+            >Disclaimer</a
+          >
+          <a href="../eula" class="text-sm active:bg-white py-4 text-accent"
+            >EULA</a
+          >
+          <a
+            href="../cookie-policy"
+            class="text-sm active:bg-white py-4 text-accent"
+            >Cookie Policy</a
+          >
+        </div>
+      </div>
+    </div>
   <script>
     const year = new Date().getFullYear();
     document.querySelector("#year").innerText = year;
   </script>
+  <script src="/public/src/scripts/menu.js"></script>
 </body>
 
 </html>
