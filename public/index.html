@@ -56,15 +56,17 @@
               <label for="email">
                 <span>Email</span>
               </label>
-              <p id="message" class="text-green-500 my-0"></p>
-              <div class="grid grid-cols-12 items-center gap-4 mt-2 mb-2">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="border rounded-lg p-2 col-span-full sm:col-span-8 focus-visible:outline-gray-300"
-                  placeholder="Enter your email"
-                />
+              <div class="grid grid-cols-12 items-start gap-4 mt-2 mb-2">
+                <div class="col-span-full sm:col-span-8 flex flex-col">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="border rounded-lg p-2 w-full focus-visible:outline-gray-300"
+                    placeholder="Enter your email"
+                  />
+                  <p id="message" class="text-red-500 my-0 text-xs mt-1"></p>
+                </div>
                 <button
                   type="submit"
                   id="submit-btn"
@@ -82,7 +84,7 @@
         </div>
         <div class="hidden md:block md:col-span-6">
           <img
-            src="./src/images/Develop App Illustration 1.svg"
+            src="./src/images/mobile frame.svg"
             class="items-start justify-start"
           />
         </div>
@@ -168,6 +170,40 @@
         </div>
       </div>
     </footer>
+    <!-- modal -->
+    <div
+      id="success-modal"
+      class="fixed inset-0 bg-gray-900/15 flex items-center justify-center backdrop-blur-sm h-0 overflow-hidden transition-all"
+    >
+      <div
+        id="modal-content"
+        class="p-10 bg-white shadow rounded-lg w-full max-w-sm relative"
+      >
+        <button
+          class="close-modal absolute top-4 right-4 rounded-full bg-gray-200 p-2"
+        >
+          <img src="/public/src/icons/x.svg" alt="Close" class="size-3" />
+        </button>
+        <div class="flex flex-col items-center gap-1 text-center">
+          <div
+            class="flex items-center justify-center p-3 bg-gray-200/60 rounded-full"
+          >
+            <img
+              src="/public/src/icons/check.svg"
+              alt="checkmard"
+              class="size-6"
+            />
+          </div>
+          <h3 class="capitalize text-lg">Thank You for Subscribing</h3>
+          <p class="text-sm">We will keep you posted on any updates.</p>
+          <button
+            class="close-modal bg-black text-white rounded-lg p-2.5 w-1/2 mt-4"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
     <script>
       const year = new Date().getFullYear();
       document.querySelector("#year").innerText = year;
