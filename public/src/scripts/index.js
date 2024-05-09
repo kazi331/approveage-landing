@@ -24,7 +24,8 @@ const resetForm = () => {
 
 const openModal = () => {
     successModal.classList.remove("h-0");
-    successModal.classList.remove("h-full");
+    modalContent.classList.remove("h-0");
+    // successModal.classList.remove("h-full");
 };
 const closeModal = () => {
     successModal.classList.add("h-0");
