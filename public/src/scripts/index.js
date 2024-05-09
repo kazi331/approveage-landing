@@ -61,6 +61,23 @@ const subscribe = async (email) => {
     }
 }
 
+// email validation;
+const verifyEmail = email => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+}
+//  onchange event for email input field
+form.addEventListener("input", e => {
+    if (!verifying) return;
+    if (verifyEmail(e.target.value)) {
+        e.target.style.outline = '1px solid #2db04a';
+        message.innerText = "";
+    } else {
+        e.target.style.outline = '1px solid red';
+        message.innerText = "Please enter a valid email address";
+    }
+})
+
 //  submit event for form
 form.addEventListener("submit", async e => {
     e.preventDefault();
@@ -91,19 +108,3 @@ form.addEventListener("submit", async e => {
     }
 });
 
-// email validation;
-const verifyEmail = email => {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(email);
-}
-//  onchange event for email input field
-form.addEventListener("input", e => {
-    if (!verifying) return;
-    if (verifyEmail(e.target.value)) {
-        e.target.style.outline = '1px solid #2db04a';
-        message.innerText = "";
-    } else {
-        e.target.style.outline = '1px solid red';
-        message.innerText = "Please enter a valid email address";
-    }
-})
