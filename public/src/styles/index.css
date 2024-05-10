@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*/
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"); */
+
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -618,6 +618,10 @@ video {
   right: 1rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .top-20{
   top: 5rem;
 }
@@ -1051,15 +1055,15 @@ video {
   transition-duration: 150ms;
 }
 
+* {
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
 h1,
 h2,
 h3,
 h4{
   font-weight: 600;
-}
-
-* {
-  font-family: "Inter", sans-serif;
 }
 
 h4{
@@ -1081,7 +1085,7 @@ ol{
 }
 
 ol li{
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.5rem;
 }
 
 aside li a{
@@ -1108,24 +1112,6 @@ ul.common-list{
 
 ul.common-list li{
   margin-bottom: 0.25rem;
-}
-
-ol li{
-  margin-bottom: 0.5rem;
-}
-
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.spinner{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
 }
 
 th,
@@ -1173,6 +1159,14 @@ a:hover{
 }
 
 @media (min-width: 640px){
+  .sm\:sticky{
+    position: sticky;
+  }
+
+  .sm\:top-3{
+    top: 0.75rem;
+  }
+
   .sm\:col-span-4{
     grid-column: span 4 / span 4;
   }

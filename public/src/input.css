@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
 
 h1,
 h2,
@@ -9,14 +14,9 @@ h3,
 h4 {
   @apply font-semibold;
 }
-* {
-  font-family: "Inter", sans-serif;
-}
-
 h4 {
   @apply text-lg mt-6 mb-2;
 }
-
 p {
   @apply my-2;
 }
@@ -24,7 +24,7 @@ ol {
   @apply list-decimal list-inside pl-4;
 }
 ol li {
-  @apply mb-0.5;
+  @apply mb-2;
 }
 aside li a {
   @apply px-2 py-1.5 block text-gray-700;
@@ -37,16 +37,6 @@ ul.common-list {
 }
 ul.common-list li {
   @apply mb-1;
-}
-ol li {
-  @apply mb-2;
-}
-
-.spinner {
-  @apply animate-pulse;
-}
-.poppins {
-  font-family: "Poppins", sans-serif;
 }
 th,
 td {
