@@ -32,10 +32,10 @@ aside li a {
 aside li a:hover {
   @apply bg-gray-100;
 }
-ul.common-list {
+ul {
   @apply list-disc list-inside pl-4 mb-4;
 }
-ul.common-list li {
+ul li {
   @apply mb-1;
 }
 th,
