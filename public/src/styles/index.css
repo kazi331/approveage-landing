@@ -765,6 +765,10 @@ video {
   width: 50%;
 }
 
+.w-10{
+  width: 2.5rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -806,6 +810,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -842,6 +850,10 @@ video {
   gap: 1rem;
 }
 
+.gap-y-0{
+  row-gap: 0px;
+}
+
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -852,6 +864,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-auto{
+  overflow: auto;
 }
 
 .overflow-hidden{
@@ -873,11 +889,6 @@ video {
 .border-slate-200{
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
-}
-
-.border-slate-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 .bg-accent{
@@ -923,14 +934,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-20{
-  padding: 5rem;
-}
-
-.p-1{
-  padding: 0.25rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -953,10 +956,6 @@ video {
 
 .pe-4{
   padding-inline-end: 1rem;
-}
-
-.ps-4{
-  padding-inline-start: 1rem;
 }
 
 .text-left{
@@ -1126,9 +1125,18 @@ th,
 td{
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
   padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
+
+/* tr{
+  @apply bg-sky-200
+}
+th{
+  @apply bg-slate-300 p-0
+} */
 
 a{
   color: rgb(95 125 34 / 0.8);
@@ -1137,6 +1145,19 @@ a{
 a:hover{
   --tw-text-opacity: 1;
   color: rgb(95 125 34 / var(--tw-text-opacity));
+}
+
+footer ul{
+  margin-bottom: 0px;
+}
+
+footer ul li{
+  margin-bottom: 0px;
+}
+
+footer ul li a{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .hover\:bg-accent\/90:hover{
@@ -1195,6 +1216,10 @@ a:hover{
     display: none;
   }
 
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
   .sm\:gap-10{
     gap: 2.5rem;
   }
@@ -1221,10 +1246,6 @@ a:hover{
 
   .md\:block{
     display: block;
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
   }
 
   .md\:text-4xl{

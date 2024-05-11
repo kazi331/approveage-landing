@@ -8,6 +8,7 @@ module.exports = {
         'secondary': "#2d4a65",
         'accent': "#0f172a",
       },
+      
     },
   },
   plugins: [],

@@ -40,8 +40,23 @@ ul li {
 }
 th,
 td {
-  @apply border border-slate-600 p-2;
+  @apply border border-slate-300 p-2 text-sm;
 }
+/* tr{
+  @apply bg-sky-200
+}
+th{
+  @apply bg-slate-300 p-0
+} */
 a {
   @apply text-primary/80 hover:text-primary;
+}
+footer ul{
+  @apply mb-0 
+}
+footer ul li{
+  @apply mb-0
+}
+footer ul li a{
+  @apply text-sm
 }
