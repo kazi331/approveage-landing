@@ -715,8 +715,8 @@ video {
   margin-top: 1rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
+.mt-auto{
+  margin-top: auto;
 }
 
 .block{
@@ -757,12 +757,12 @@ video {
   height: 0px;
 }
 
-.min-h-\[calc\(100vh-190px\)\]{
-  min-height: calc(100vh - 190px);
+.min-h-\[100\%\]{
+  min-height: 100%;
 }
 
-.min-h-\[calc\(100vh-72px\)\]{
-  min-height: calc(100vh - 72px);
+.min-h-\[calc\(100vh-190px\)\]{
+  min-height: calc(100vh - 190px);
 }
 
 .w-1\/2{
@@ -1048,6 +1048,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline{
+  outline-style: solid;
+}
+
 .backdrop-blur{
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1068,6 +1072,11 @@ video {
 
 * {
   font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+html, body{
+  margin: 0;
+  height: 100%
 }
 
 h1,
