@@ -31,7 +31,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding:14px;
+        padding: 14px;
       "
     >
       <div style="max-width: 834px; margin: auto">
@@ -39,7 +39,16 @@
           style="margin: 5px 0 30px; align-items: center; text-align: center"
         >
           <a
-            style="text-decoration: none; outline: none; color: #495057; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600;"
+            style="
+              text-decoration: none;
+              outline: none;
+              color: #495057;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              font-weight: 600;
+            "
             href="https://approveage.com"
             target="_blank"
           >
@@ -101,8 +110,11 @@
             Accepted
           </h2>
           <p style="color: #495057; font-size: 12px; margin: 20px 0">
-            You’ve accepted [name]’s mortgage application invitation. Please
-            open the app to view further details.
+            You’ve accepted
+            <span style="text-transform: capitalize" id="invitefrom"
+              >[name]</span
+            >'s mortgage application invitation. Please open the app to view
+            further details.
           </p>
           <a
             href="https://approveage.com"
@@ -141,5 +153,11 @@
         >
       </p>
     </div>
+    <script>
+      const inviteFrom = new URLSearchParams(window.location.search).get(
+        "name"
+      );
+      document.getElementById("invitefrom").innerText = inviteFrom;
+    </script>
   </body>
 </html>

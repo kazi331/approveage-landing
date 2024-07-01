@@ -110,8 +110,11 @@
             Declined
           </h2>
           <p style="color: #495057; font-size: 12px; margin: 20px 0">
-            You’ve declined [name]’s mortgage application invitation. Please
-            open the app to view further details.
+            You’ve declined
+            <span style="text-transform: capitalize" id="invitefrom"
+              >[name]</span
+            >'s mortgage application invitation. Please open the app to view
+            further details.
           </p>
           <a
             href="https://approveage.com"
@@ -150,5 +153,11 @@
         >
       </p>
     </div>
+    <script>
+      const inviteFrom = new URLSearchParams(window.location.search).get(
+        "name"
+      );
+      document.getElementById("invitefrom").innerText = inviteFrom;
+    </script>
   </body>
 </html>
