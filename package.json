@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "tailwindcss -i ./public/src/styles/input.css -o ./public/src/styles/index.css --watch",
+    "build": "",
     "serve": "serve ./public"
   },
   "devDependencies": {
