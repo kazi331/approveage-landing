@@ -25,7 +25,7 @@
     <meta content="Meta description" name=twitter:description>
     <meta content=./src/images/profile-image-01.png name=twitter:image>
     <meta content="Kazi Shariful Islam, kazisharifulislam52@gmail.com, https://kazi331.vercel.app" name=developer>
-    <link href=./src/styles/index.css rel=stylesheet>
+    <link href=./src/styles/index.min.css rel=stylesheet>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -46,31 +46,25 @@
                         <div class=mb-8>
                             <h1
                                 class="capitalize font-semibold leading-10 mb-10 md:leading-[48px] md:text-4xl text-3xl">
-                                <span class=text-primary>Simplify</span> the mortgage<br>process with us
-                            </h1>
+                                <span class=text-primary>Simplify</span> the mortgage<br>process with us</h1>
                             <p class="text-gray-500 my-4">We make the mortgage approval process easy for you and other
                                 potential Canadian homeowners. Join now to begin your journey!
                         </div>
-                        <p class="text-gray-500">Get the Approveage app on the Playstore and Appstore</p>
-                        <div class="flex flex-wrap gap-4 items-center justify-center sm:justify-start mt-4">
-
-                            <!-- use these two buttons  -->
-                            <a href="https://play.google.com/store/apps/details?id=com.approveage" target="_blank">
-                                <img src="./src/icons/buttons/playstore-btn.png" width="140" alt="playstore">
-                            </a>
-                            <a href="https://apps.apple.com/app/approveage/id6476051444" target="_blank">
-                                <img src="./src/icons/buttons/appstore-btn.png" width="140" alt="appstore">
-                            </a>
-
-                            <!-- Or, these two -->
-                            <!-- <a href="https://play.google.com/store/apps/details?id=com.approveage" target="_blank">
-                                <img src="./src/icons/download/GooglePlay.png" width="150" alt="playtore">
-                            </a>
-                            <a href="https://apps.apple.com/app/approveage/id6476051444" target="_blank">
-                                <img src="./src/icons/download/AppStore.png" width="150" alt="appstore">
-                            </a> -->
-
-                        </div>
+                        <fieldset>
+                            <form><label for=email><span>Enter your email to subscribe</span></label>
+                                <div class="grid grid-cols-12 gap-4 items-start mb-2 mt-2">
+                                    <div class="flex flex-col col-span-full sm:col-span-8"><input
+                                            class="rounded-lg border w-full focus-visible:outline-gray-300 p-2" id=email
+                                            name=email placeholder="Enter your email">
+                                        <p class="mt-1 my-0 text-red-500 text-xs" id=message>
+                                    </div><button
+                                        class="rounded-lg border col-span-full active:scale-95 bg-accent disabled:cursor-not-allowed disabled:opacity-50 hover:bg-accent/90 py-2 sm:col-span-4 text-white transition-all w-full"
+                                        id=submit-btn type=submit>Subscribe</button>
+                                </div>
+                            </form>
+                        </fieldset>
+                        <p class="text-gray-500 my-2">Coming to the App store and Google Play Store. Subscribe for
+                            updates on our release. We promise you we won’t spam you.
                     </div>
                     <div class="md:col-span-6 hidden md:block"><img src="./src/images/mobile frame mini.svg" height=500
                             width=500 class="items-start justify-start"></div>
