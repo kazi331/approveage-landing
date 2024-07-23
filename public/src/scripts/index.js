@@ -81,9 +81,11 @@ form.addEventListener("input", e => {
 //  submit event for form
 form.addEventListener("submit", async e => {
     e.preventDefault();
+    // handle empty email field
     if (e.target.email.value === '') {
         verifying = true;
         e.target.email.style.outline = '1px solid red';
+        e.target.email.focus();
         e.target.email.animate([
             { transform: 'translateX(0px)' },
             { transform: 'translateX(10px)' },
