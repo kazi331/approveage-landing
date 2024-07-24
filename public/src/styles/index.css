@@ -1447,6 +1447,10 @@ footer ul li a {
     flex-wrap: nowrap;
   }
 
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
   .sm\:gap-10 {
     gap: 2.5rem;
   }

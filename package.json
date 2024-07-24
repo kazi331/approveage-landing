@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "tailwindcss -i ./public/src/styles/input.css -o ./public/src/styles/index.css --watch",
     "build": "tailwindcss -i ./public/src/styles/input.css -o ./public/src/styles/index.css",
-    "serve": "serve ./public"
+    "serve": "serve ./public",
+    "minify": "css-minify -f ./public/src/styles/index.css -o ./public/src/styles/"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
