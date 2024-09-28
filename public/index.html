@@ -40,7 +40,7 @@
             <header class="container max-w-6xl mx-auto px-4 my-8 py-2"><a href=/ class="flex items-center gap-2"><img
                         src=./src/icons/logo.svg alt=logo height=40 width=40> <span
                         class=logo-title>Approveage</span></a></header>
-            <section class="container max-w-6xl mx-auto px-4 mb-14">
+            <section class="container max-w-6xl mx-auto px-4">
                 <div class="items-center justify-center grid grid-cols-12 justify-items-center space-x-10">
                     <div class="col-span-full md:col-span-6">
                         <div class=mb-8>
@@ -62,7 +62,7 @@
                                 <img src="./src/icons/buttons/appstore-btn.png" width="140" alt="appstore">
                             </a> -->
 
-                            
+
                             <!-- Or, these two -->
                             <a href="https://play.google.com/store/apps/details?id=com.approveage" target="_blank">
                                 <img src="./src/icons/download/GooglePlay.png" width="150" alt="playtore">
@@ -100,21 +100,43 @@
                     </div>
                 </div>
             </section>
-            <footer class="mt-auto py-4 text-slate-500">
-                <div class="container max-w-6xl mx-auto px-4">
-                    <div class="flex items-center flex-col text-center justify-between sm:flex-row">
-                        <p>© <span id=year></span> Approveage. All rights reserved.
-                        <nav>
-                            <ul class="flex items-center justify-center flex-wrap gap-4 gap-y-0 list-none">
-                                <li><a href=/terms>Terms of Service</a>
-                                <li><a href=/privacy>Privacy Policy</a>
-                                <li><a href=/support>Get Support</a>
-                            </ul>
-                        </nav>
-                    </div>
+            <footer
+                class="container max-w-6xl mx-auto px-4 mt-auto py-4 text-slate-500 flex flex-col sm:flex-row items-center text-center justify-between gap-3">
+                <p>© <span id=year></span> Approveage. All rights reserved.</p>
+                <div class="flex items-center justify-center gap-3">
+                    <a href="https://facebook.com/61559703064309" class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-6" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/approveageapp" class="text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/approveageapp" class="text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-youtube">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                            <path d="m10 15 5-3-5-3z" />
+                        </svg>
+                    </a>
+                </div>
+                <nav class="flex items-center justify-center flex-wrap gap-4 gap-y-0">
+                    <a href=/terms>Terms of Service</a>
+                    <a href=/privacy>Privacy Policy</a>
+                    <a href=/support>Get Support</a>
+                </nav>
+
                 </div>
             </footer>
         </main>
+        <!-- menu -->
         <div class="flex items-center justify-center backdrop-blur-sm bg-gray-900/15 fixed h-0 inset-0 overflow-hidden transition-all"
             id=success-modal>
             <div class="rounded-lg w-full bg-white max-w-sm mx-3 p-4 py-10 relative shadow sm:p-10" id=modal-content>
